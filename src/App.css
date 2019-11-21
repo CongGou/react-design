@@ -10,9 +10,121 @@ a {
   text-decoration: none;
   font-weight: 600;
 }
-
-.App {
+.wrap {
   width: 100%;
   height: 100%;
-  background: #ccc;
+}
+.App {
+  width: 100%;
+  height: 900px;
+  background: url("./images/wallpaper3.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.AppGroup {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+.AppGroup h1 {
+  margin: 0;
+  color: white;
+  font-size: 60px;
+  line-height: 1.2;
+  animation: AppAnimation 3s 0.2s forwards cubic-bezier(0.02, 0.8, 0.2, 1);
+  opacity: 0;
+}
+.AppGroup p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  line-height: 1.5;
+  animation: AppAnimation 3s 0.2s forwards cubic-bezier(0.02, 0.8, 0.2, 1);
+  opacity: 0;
+}
+@media (max-width: 640px) {
+  .AppGroup {
+    padding: 100px 20px;
+  }
+  .App h1 {
+    font-size: 40px;
+  }
+  .App p {
+    font-size: 24px;
+  }
+}
+@keyframes AppAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.AppGroup a {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.AppGroup a:hover {
+  background: white;
+  color: #000;
+}
+
+.AppGroup .logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+  margin: 100px 0;
+  justify-items: center;
+  z-index: 10;
+}
+.App svg {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+@media (max-width: 640px) {
+  .App .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.Cards h2 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #050a27 0%, #4a548c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.CardGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+}
+@media (max-width: 1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
