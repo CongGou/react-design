@@ -66,6 +66,36 @@ const App = () => (
           text="12 sections"
           image={require("./images/wallpaper.jpg")}
         />
+        <Card
+          title="React for Designers"
+          text="12 sections"
+          image={require("./images/wallpaper.jpg")}
+        />
+        <Card
+          title="React for Designers"
+          text="12 sections"
+          image={require("./images/wallpaper.jpg")}
+        />
+        <Card
+          title="React for Designers"
+          text="12 sections"
+          image={require("./images/wallpaper.jpg")}
+        />
+        <Card
+          title="React for Designers"
+          text="12 sections"
+          image={require("./images/wallpaper.jpg")}
+        />
+        <Card
+          title="React for Designers"
+          text="12 sections"
+          image={require("./images/wallpaper.jpg")}
+        />
+        <Card
+          title="React for Designers"
+          text="12 sections"
+          image={require("./images/wallpaper.jpg")}
+        />
       </div>
     </div>
     <Section
